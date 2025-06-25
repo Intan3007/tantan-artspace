@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;}
+/*--id selector--*/
+.navbar {
+    width: 100%;
+    background-color: rgb(199, 210, 170);
+    color: rgb(73, 255, 143);
+    padding: 15px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+}    
+.navbar .navbar-logo h1 {
+    font-size: 35px;
+    color: rgb(85, 85, 85);
+}
+.navbar .navbar-logo .tec {
+    color: rgb(215, 133, 91);
+}
+.navbar ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+}
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: darkorange;
+}
+
+/* === Main Content === */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-image: url(background\ fix.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.79);
+  border-radius: 20px;
+  display: flex;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 20px;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.kembali {
+  background-color: #888;
+  color: white;
+}
+
+.belanja {
+  background-color: #388e3c;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.kembali:hover {
+    background: #333;
+}
+.belanja:hover {
+    background: maroon;
+}
